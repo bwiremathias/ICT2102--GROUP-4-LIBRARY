@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Community Knowledge Library</title>
+    <title> Knowledge hub Library</title>
 
     <style>
         body {
@@ -123,7 +123,7 @@
 
     <!-- HEADER AND NAVIGATION -->
     <header id="home">
-        <h1>Community Knowledge Library</h1>
+        <h1>Knowledge hub Library</h1>
         <p><strong>Read, Learn and Grow</strong></p>
         <p>
             A welcoming centre for reading, research,
@@ -149,7 +149,7 @@
             <h2>Welcome to Our Library</h2>
 
             <p>
-                Welcome to <strong>Community Knowledge Library</strong>,
+                Welcome to <strong>Knowledge  hub Library</strong>,
                 a learning and research centre that provides students,
                 teachers, researchers and community members with access
                 to useful educational resources.
@@ -171,7 +171,7 @@
             <h2>About the Library</h2>
 
             <p>
-                Community Knowledge Library is a community learning
+                Knowledge hub Library is a community learning
                 centre designed to support education, reading, research
                 and the sharing of knowledge.
             </p>
@@ -628,11 +628,11 @@
         <section id="contact">
             <h2>Opening Hours and Member Information</h2>
 
-            <p><strong>Library:</strong> Community Knowledge Library</p>
+            <p><strong>Library:</strong> Knowledge hub Library</p>
 
             <p>
                 <strong>Physical Location:</strong>
-                Replace this with the actual library location.
+                UNITE CAMPUS, KALIRO DISTRICT.
             </p>
 
             <p>
@@ -643,11 +643,11 @@
 
             <p>
                 <strong>Telephone:</strong>
-                <a href="tel:+256700000000">+256 700 000 000</a>
+                <a href="tel:+256753756968">+256 774321568</a>
             </p>
 
             <p>
-                <strong>Email:</strong>
+                <strong>Email: bwiremathias19@gmail.com</strong>
                 <a href="mailto:info@example.com">info@example.com</a>
             </p>
 
@@ -666,7 +666,7 @@
     <!-- WEBSITE FOOTER -->
     <footer>
         <p>
-            <strong>Community Knowledge Library</strong>
+            <strong>Knowledge hub Library</strong>
         </p>
 
         <p>Read, Learn and Grow</p>
@@ -681,11 +681,11 @@
 
         <p>
             Email:
-            <a href="mailto:info@example.com">info@example.com</a>
+            <a href="mailto:info@unite.com">info@unite.com</a>
         </p>
 
         <p>
-            &copy; 2026 Community Knowledge Library.
+            &copy; 2026 Knowledge hub Library.
             All rights reserved.
         </p>
     </footer>
