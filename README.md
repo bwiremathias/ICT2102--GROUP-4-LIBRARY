@@ -631,8 +631,8 @@
             <p><strong>Library:</strong> Knowledge hub Library</p>
 
             <p>
-                <strong>Physical Location:</strong>
-                UNITE CAMPUS, KALIRO DISTRICT.
+                <strong> Location:</strong>
+                UNITE Campus, Kaliro.
             </p>
 
             <p>
@@ -643,12 +643,12 @@
 
             <p>
                 <strong>Telephone:</strong>
-                <a href="tel:+256753756968">+256 774321568</a>
+                <a href="tel:+256753756968">+256 753756968</a>
             </p>
 
             <p>
                 <strong>Email: bwiremathias19@gmail.com</strong>
-                <a href="mailto:info@example.com">info@example.com</a>
+                <a href="mailto:info@unite.com">info@example.com</a>
             </p>
 
             <h3>Membership and Borrowing Information</h3>
