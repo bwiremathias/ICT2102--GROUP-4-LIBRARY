@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Membership Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f5f8;
+            margin: 0;
+            color: #222;
+        }
+
+        header, footer {
+            background: #174a6e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background: #10354f;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+        }
+
+        form {
+            background: white;
+            padding: 22px;
+            border-radius: 8px;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #b8c5d0;
+            border-radius: 6px;
+            padding: 15px;
+        }
+
+        legend {
+            color: #174a6e;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        .option {
+            font-weight: normal;
+        }
+
+        button {
+            padding: 12px 18px;
+            margin: 5px;
+            background: #174a6e;
+            color: white;
+            border: 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Community Knowledge Library</h1>
+    <p>Membership Registration Form</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="membership.html">Membership</a>
+    <a href="book-request.html">Book Request</a>
+    <a href="feedback.html">Feedback</a>
+</nav>
+
+<main>
+    <h2>Become a Library Member</h2>
+    <p>Complete the form to apply for library membership.</p>
+
+    <form action="#" method="get">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname"
+                   autocomplete="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"
+                   autocomplete="email" required>
+
+            <label for="telephone">Telephone Number</label>
+            <input type="tel" id="telephone" name="telephone"
+                   autocomplete="tel" required>
+
+            <label for="birthdate">Date of Birth</label>
+            <input type="date" id="birthdate" name="birthdate"
+                   required>
+
+            <label for="address">Physical Address</label>
+            <textarea id="address" name="address" rows="3"
+                      autocomplete="street-address" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Membership Category</legend>
+
+            <label for="category">Select Membership Category</label>
+            <select id="category" name="category" required>
+                <option value="">-- Choose a category --</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="researcher">Researcher</option>
+                <option value="child">Child</option>
+                <option value="community">Community Member</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Library Services Required</legend>
+            <p>Select all services you need.</p>
+
+            <label class="option">
+                <input type="checkbox" name="services" value="borrowing">
+                Borrow books
+            </label>
+
+            <label class="option">
+                <input type="checkbox" name="services" value="reading">
+                Reading room
+            </label>
+
+            <label class="option">
+                <input type="checkbox" name="services" value="computers">
+                Computer access
+            </label>
+
+            <label class="option">
+                <input type="checkbox" name="services" value="internet">
+                Internet access
+            </label>
+
+            <label class="option">
+                <input type="checkbox" name="services" value="research">
+                Research assistance
+            </label>
+
+            <label class="option">
+                <input type="checkbox" name="services" value="digital">
+                Digital resources
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender</legend>
+
+            <label class="option">
+                <input type="radio" name="gender" value="male" required>
+                Male
+            </label>
+
+            <label class="option">
+                <input type="radio" name="gender" value="female">
+                Female
+            </label>
+
+            <label class="option">
+                <input type="radio" name="gender" value="prefer-not-to-say">
+                Prefer not to say
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Membership Duration</legend>
+
+            <label class="option">
+                <input type="radio" name="duration" value="3-months" required>
+                3 months
+            </label>
+
+            <label class="option">
+                <input type="radio" name="duration" value="6-months">
+                6 months
+            </label>
+
+            <label class="option">
+                <input type="radio" name="duration" value="1-year">
+                1 year
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Information</legend>
+
+            <label for="username">Choose a Username</label>
+            <input type="text" id="username" name="username"
+                   autocomplete="username" required minlength="4">
+
+            <label for="password">Create a Password</label>
+            <input type="password" id="password" name="password"
+                   autocomplete="new-password" required minlength="8">
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password"
+                   name="confirm-password"
+                   autocomplete="new-password" required minlength="8">
+        </fieldset>
+
+        <button type="submit">Submit Registration</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 Community Knowledge Library</p>
+</footer>
+
+</body>
+</html>
