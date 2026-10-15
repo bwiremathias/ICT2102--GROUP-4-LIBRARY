@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Feedback</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f5f8;
+            margin: 0;
+            color: #222;
+        }
+
+        header, footer {
+            background: #174a6e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background: #10354f;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+        }
+
+        section, form {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        .option {
+            font-weight: normal;
+        }
+
+        button {
+            padding: 12px 18px;
+            margin: 5px;
+            background: #174a6e;
+            color: white;
+            border: 0;
+            border-radius: 4px;
+        }
+
+        audio, video {
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Community Knowledge Library</h1>
+    <p>Feedback and Multimedia Centre</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="membership.html">Membership</a>
+    <a href="book-request.html">Book Request</a>
+    <a href="feedback.html">Feedback</a>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Help Us Improve Our Library</h2>
+
+        <p>
+            Your feedback helps us improve our books, internet services,
+            staff assistance, resource availability and reading environment.
+        </p>
+
+        <form action="#" method="get">
+
+            <fieldset>
+                <legend>About You</legend>
+
+                <label for="feedback-name">Full Name</label>
+                <input type="text" id="feedback-name" name="name" required>
+
+                <label for="feedback-email">Email Address</label>
+                <input type="email" id="feedback-email"
+                       name="email" required>
+
+                <label for="member-type">Membership Category</label>
+                <select id="member-type" name="member-type" required>
+                    <option value="">-- Select category --</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="researcher">Researcher</option>
+                    <option value="child">Child</option>
+                    <option value="community">Community Member</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Rate Our Library</legend>
+
+                <p>How would you rate the quality of our books?</p>
+
+                <label class="option">
+                    <input type="radio" name="book-quality"
+                           value="excellent" required>
+                    Excellent
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="book-quality" value="good">
+                    Good
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="book-quality" value="fair">
+                    Fair
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="book-quality" value="poor">
+                    Poor
+                </label>
+
+                <p>Which services have you used?</p>
+
+                <label class="option">
+                    <input type="checkbox" name="services"
+                           value="books">
+                    Book borrowing
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="services"
+                           value="internet">
+                    Internet services
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="services"
+                           value="staff">
+                    Staff assistance
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="services"
+                           value="reading-room">
+                    Reading room
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="services"
+                           value="digital">
+                    Digital resources
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Comments</legend>
+
+                <label for="environment">
+                    How would you rate the library environment?
+                </label>
+
+                <select id="environment" name="environment" required>
+                    <option value="">-- Select a rating --</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="fair">Fair</option>
+                    <option value="poor">Poor</option>
+                </select>
+
+                <label for="comments">
+                    Describe your experience and suggest improvements.
+                </label>
+
+                <textarea id="comments" name="comments"
+                          rows="6" required></textarea>
+            </fieldset>
+
+            <button type="submit">Submit Feedback</button>
+            <button type="reset">Clear Form</button>
+
+        </form>
+    </section>
+
+    <!-- LIBRARY AUDIO -->
+    <section>
+        <h2>Library Audio Guide</h2>
+
+        <p>
+            Listen to our audio guide for information about library
+            membership, borrowing procedures and library rules.
+        </p>
+
+        <audio controls preload="metadata">
+            <source src="library-guide.mp3" type="audio/mpeg">
+            Your browser does not support HTML audio.
+        </audio>
+
+        <p>
+            <em>Audio file: library-guide.mp3</em>
+        </p>
+    </section>
+
+    <!-- LIBRARY VIDEO -->
+    <section>
+        <h2>How to Use the Library</h2>
+
+        <p>
+            Watch the library guide to learn how to locate books,
+            request resources and use library facilities.
+        </p>
+
+        <video controls preload="metadata"
+               poster="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=800&q=80">
+            <source src="library-guide.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+
+        <p>
+            <em>Video file: library-guide.mp4</em>
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Community Knowledge Library</p>
+</footer>
+
+</body>
+</html>
