@@ -584,8 +584,7 @@
 
             <p>
                 <em>
-                    These rates are examples for demonstrating JavaScript.
-                    Replace them with the actual library rates if available.
+                    These rates are negotiable and the client can ask the librarian for more information 
                 </em>
             </p>
         </section>
@@ -648,7 +647,7 @@
 
             <p>
                 <strong>Email: bwiremathias19@gmail.com</strong>
-                <a href="mailto:info@unite.com">info@example.com</a>
+                <a href="mailto:info@unite.com">info@unite.com</a>
             </p>
 
             <h3>Membership and Borrowing Information</h3>
