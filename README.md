@@ -31,7 +31,7 @@
 
         nav a {
             color: white;
-            text-decoration: none;
+            text-decoration: times new Roman;
             margin: 10px;
             display: inline-block;
         }
@@ -46,7 +46,7 @@
             background-color: white;
             margin-bottom: 20px;
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 10px;
         }
 
         h2 {
@@ -56,7 +56,7 @@
         img {
             max-width: 100%;
             height: auto;
-            border-radius: 6px;
+            border-radius: 8px;
         }
 
         .gallery {
