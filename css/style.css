@@ -295,3 +295,187 @@ video {
         overflow-x: auto;
     }
 }
+
+/* Library image gallery */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    background-color: #edf5ef;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.gallery-item p {
+    font-weight: bold;
+    color: #164734;
+}
+
+/* Responsive gallery */
+@media (max-width: 700px) {
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =====================================
+   RESPONSIVE DESIGN IMPROVEMENTS
+   ===================================== */
+
+/* Prevent content from overflowing */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Make all images fit their containers */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive navigation */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+
+/* Responsive image gallery */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Make tables scroll on small screens */
+table {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .image-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px;
+    }
+
+    input,
+    select,
+    textarea {
+        max-width: 100%;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 15px 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+    }
+
+    main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .image-gallery img {
+        height: 200px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    footer {
+        padding: 15px 10px;
+        text-align: center;
+    }
+}
