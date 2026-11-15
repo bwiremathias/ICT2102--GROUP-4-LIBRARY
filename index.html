@@ -8,6 +8,8 @@
     <!-- Page title -->
     <title>Knowledge Hub Library</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+  
 </head>
 
 <body>
@@ -21,17 +23,28 @@
      width="600">
      alt="Interior of Community Knowledge Library"
      width="600">
-         <nav>
-        <a href="#home">Home</a> |
-        <a href="#books">Books</a> |
-        <a href="#membership">Membership</a> |
-        <a href="#gallery">Gallery</a> |
-        <a href="#about">About</a> |
-        <a href="#contact">Contact</a>
-       <a href="#membership-form">Register</a> |
-<a href="#book-request">Request a Book</a> |
-<a href="#feedback">Feedback</a> 
-    </nav>
+       <button
+    type="button"
+    id="menu-button"
+    aria-label="Open navigation menu"
+>
+    ☰ Menu
+</button>
+
+<nav id="main-nav">
+
+    <a href="#home">Home</a> |
+    <a href="#books">Books</a> |
+    <a href="#membership">Membership</a> |
+    <a href="#gallery">Gallery</a> |
+    <a href="#about">About</a> |
+    <a href="#contact">Contact</a> |
+    <a href="#membership-form">Register</a> |
+    <a href="#book-request">Request a Book</a> |
+    <a href="#borrowing">Borrow a Book</a> |
+    <a href="#feedback">Feedback</a>
+
+</nav> 
     </header>
 
 
@@ -326,6 +339,28 @@
 </section>
 
     </main>
+    <section id="books">
+
+    <h2>Library Books</h2>
+
+    <p>
+        Search our library collection by book title.
+    </p>
+
+    <input
+        type="text"
+        id="book-search"
+        placeholder="Search for a book title"
+        aria-label="Search for a book title"
+    >
+
+    <p id="search-result"></p>
+
+    <div id="book-list" class="book-list"></div>
+
+    <div id="book-details"></div>
+
+</section>
 
    
  <footer>
@@ -458,6 +493,85 @@
         <button type="submit">Submit Book Request</button>
         <button type="reset">Clear Form</button>
     </form>
+</section>
+<section id="borrowing">
+
+    <h2>Borrow a Book</h2>
+
+    <form id="borrowing-form">
+
+        <label for="borrowerName">
+            Borrower Name:
+        </label>
+
+        <input
+            type="text"
+            id="borrowerName"
+            name="borrowerName"
+            required
+        >
+
+        <label for="borrowerContact">
+            Contact:
+        </label>
+
+        <input
+            type="text"
+            id="borrowerContact"
+            name="borrowerContact"
+            required
+        >
+
+        <label for="borrowBook">
+            Select Book:
+        </label>
+
+        <select
+            id="borrowBook"
+            name="borrowBook"
+            required
+        >
+
+            <option value="">
+                -- Select a book --
+            </option>
+
+            <option value="Introduction to Computer Science">
+                Introduction to Computer Science
+            </option>
+
+            <option value="Web Development Basics">
+                Web Development Basics
+            </option>
+
+            <option value="JavaScript for Beginners">
+                JavaScript for Beginners
+            </option>
+
+            <option value="African Literature">
+                African Literature
+            </option>
+
+            <option value="Introduction to Science">
+                Introduction to Science
+            </option>
+
+        </select>
+
+        <p id="availability-result"></p>
+
+        <button type="submit">
+            Submit Borrowing Request
+        </button>
+
+        <button type="reset">
+            Clear Form
+        </button>
+
+    </form>
+
+    <div id="borrow-confirmation"></div>
+
 </section>
 
 
