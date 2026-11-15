@@ -234,3 +234,64 @@ footer a {
         padding: 15px;
     }
 }
+
+/* Multimedia styling */
+audio {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 15px 0;
+}
+
+video {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border: 3px solid #164734;
+    border-radius: 10px;
+}
+
+/* Book information table */
+#book-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#book-table th,
+#book-table td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+}
+
+#book-table th {
+    background-color: #164734;
+    color: white;
+}
+
+/* Reusable library service sections */
+.service {
+    background-color: #edf5ef;
+    border-left: 5px solid #164734;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 7px;
+}
+
+/* Form section spacing */
+#membership-form,
+#book-request,
+#feedback {
+    margin-bottom: 30px;
+}
+
+/* Make tables easier to view on small screens */
+@media screen and (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}

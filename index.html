@@ -24,6 +24,9 @@
         <a href="#gallery">Gallery</a> |
         <a href="#about">About</a> |
         <a href="#contact">Contact</a>
+       <a href="#membership-form">Register</a> |
+<a href="#book-request">Request a Book</a> |
+<a href="#feedback">Feedback</a> 
     </nav>
     </header>
 
@@ -216,15 +219,26 @@
         develop skills and conduct research.
     </p>
 
-    <h3>Our Services</h3>
+   
+<section id="services">
+    <h2>Our Library Services</h2>
 
-    <ul>
-        <li>Book borrowing and reading</li>
-        <li>Internet and computer access</li>
-        <li>Research assistance</li>
-        <li>Children's reading programmes</li>
-        <li>Community education and training</li>
-    </ul>
+    <div class="service">
+        <h3>Book Borrowing</h3>
+        <p>Members can borrow books for personal study.</p>
+    </div>
+
+    <div class="service">
+        <h3>Internet Access</h3>
+        <p>Visitors can access computers and online resources.</p>
+    </div>
+
+    <div class="service">
+        <h3>Research Assistance</h3>
+        <p>Our library supports students with research activities.</p>
+    </div>
+</section>
+ 
 </section>
 <section>
     <h2>Opening Hours and Member Information</h2>
@@ -292,6 +306,158 @@
         <a href="#contact">Contact</a>
     </p>
 </footer>
+
+<section id="membership-form">
+    <h2>Library Membership Registration</h2>
+
+    <form action="#" method="post">
+        <label for="memberName">Full Name:</label>
+        <input type="text" id="memberName" name="memberName"
+               placeholder="Enter your full name" required>
+
+        <label for="memberEmail">Email Address:</label>
+        <input type="email" id="memberEmail" name="memberEmail"
+               placeholder="Enter your email" required>
+
+        <label for="memberPhone">Telephone Number:</label>
+        <input type="tel" id="memberPhone" name="memberPhone"
+               placeholder="Enter your phone number" required>
+
+        <label for="memberDate">Date of Birth:</label>
+        <input type="date" id="memberDate" name="memberDate" required>
+
+        <label for="memberCategory">Membership Category:</label>
+        <select id="memberCategory" name="memberCategory" required>
+            <option value="">Select membership</option>
+            <option value="student">Student Member</option>
+            <option value="general">General Member</option>
+            <option value="researcher">Researcher</option>
+        </select>
+
+        <p>Preferred Reading Resources:</p>
+        <label>
+            <input type="checkbox" name="interest" value="technology">
+            Technology
+        </label>
+
+        <label>
+            <input type="checkbox" name="interest" value="literature">
+            Literature
+        </label>
+
+        <label>
+            <input type="checkbox" name="interest" value="science">
+            Science
+        </label>
+
+        <p>Membership Type:</p>
+        <label>
+            <input type="radio" name="membershipType"
+                   value="physical" required>
+            Physical Library
+        </label>
+
+        <label>
+            <input type="radio" name="membershipType"
+                   value="digital">
+            Digital Library
+        </label>
+
+        <label for="memberPassword">Create Password:</label>
+        <input type="password" id="memberPassword"
+               name="memberPassword" minlength="6" required>
+
+        <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+    </form>
+</section>
+
+<section id="book-request">
+    <h2>Request a Book</h2>
+
+    <form action="#" method="post">
+        <label for="requestName">Your Name:</label>
+        <input type="text" id="requestName"
+               name="requestName" required>
+
+        <label for="requestEmail">Email Address:</label>
+        <input type="email" id="requestEmail"
+               name="requestEmail" required>
+
+        <label for="bookTitle">Book Title:</label>
+        <input type="text" id="bookTitle"
+               name="bookTitle" required>
+
+        <label for="bookAuthor">Author:</label>
+        <input type="text" id="bookAuthor"
+               name="bookAuthor" required>
+
+        <label for="isbn">ISBN Number:</label>
+        <input type="text" id="isbn" name="isbn"
+               placeholder="Enter ISBN if known">
+
+        <label for="bookCategory">Book Category:</label>
+        <select id="bookCategory" name="bookCategory" required>
+            <option value="">Select category</option>
+            <option>Technology</option>
+            <option>Education</option>
+            <option>Business</option>
+            <option>Literature</option>
+            <option>Science</option>
+            <option>History</option>
+        </select>
+
+        <label for="bookFormat">Preferred Format:</label>
+        <select id="bookFormat" name="bookFormat" required>
+            <option value="">Select format</option>
+            <option>Printed Book</option>
+            <option>Electronic Book</option>
+            <option>Audiobook</option>
+        </select>
+
+        <label for="requestDetails">Additional Requirements:</label>
+        <textarea id="requestDetails" name="requestDetails"
+                  rows="4"
+                  placeholder="Give more information about your request"></textarea>
+
+        <button type="submit">Submit Book Request</button>
+        <button type="reset">Clear Form</button>
+    </form>
+</section>
+
+
+<section id="feedback">
+    <h2>Library Feedback Form</h2>
+
+    <form action="#" method="post">
+        <label for="feedbackName">Your Name:</label>
+        <input type="text" id="feedbackName"
+               name="feedbackName" required>
+
+        <label for="feedbackEmail">Email Address:</label>
+        <input type="email" id="feedbackEmail"
+               name="feedbackEmail" required>
+
+        <label for="rating">How do you rate our library?</label>
+        <select id="rating" name="rating" required>
+            <option value="">Select rating</option>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+        </select>
+
+        <label for="feedbackMessage">Your Comments:</label>
+        <textarea id="feedbackMessage"
+                  name="feedbackMessage"
+                  rows="5"
+                  placeholder="Write your feedback here"
+                  required></textarea>
+
+        <button type="submit">Send Feedback</button>
+        <button type="reset">Clear Form</button>
+    </form>
+</section>
 
 <script>
     // List of library images
